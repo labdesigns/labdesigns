@@ -1,0 +1,103 @@
+
+article.archive-cases-part{
+    width: 250px;
+    // min-width: 250px;
+    height: auto;    
+    max-height: 235px;
+    color: #ffffff;
+
+    .post-thumb{
+        position: relative;
+        overflow: hidden;
+        max-height: 235px;
+
+       
+
+        &:hover .wp-post-image {
+            transform: scale(1.1);
+        }
+
+        .wp-post-image{
+            transition: transform ease-in-out 250ms;
+        }
+
+        &:hover .cases-overlay{
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+
+// OVERLAY
+
+.cases-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(74, 165, 165,.5);
+    opacity: 0;
+    transition: opacity ease-in-out 250ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.case-title {
+    text-shadow: -1px -1px 0 $l-black, 1px -1px 0 $l-black, -1px 1px 0 $l-black, 1px 1px 0 $l-black;
+    h5{
+        font-size: 1.7em;
+        letter-spacing: 1px;
+        padding-top: 10px;
+        transition: all ease-in-out 250ms;
+    }
+}
+
+.cases-perma-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height:60px;
+    background-image: url('../assets/img/paint-white-stripe.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center ;
+
+
+    h5{
+        color: $d-green;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        padding-top: 10px;
+        transition: all ease-in-out 250ms;
+    }
+
+    &:hover h5{
+        transform: scale(1.15);
+        color: $l-black;
+    }
+}
+
+
+    h3,
+    h4,
+    h5,
+    a{
+        color:#ffffff;
+    }
+    
+
+
+
+
+
+    
+    
+}
+

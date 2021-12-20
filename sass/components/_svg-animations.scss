@@ -1,0 +1,66 @@
+#sprocket-lg,
+#sprocket-md,
+#sprocket-sm {
+
+    transform-origin:  center;
+    transform-box: fill-box;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+}
+
+#sprocket-md{
+    animation-direction: reverse;
+}
+
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.txt_line {
+    animation: txt-lines 1s ;
+	animation-fill-mode: forwards;
+	opacity:0;
+	fill:#276AA8;
+}
+
+
+.txt_line--02{
+    animation-delay: 250ms;
+}
+.txt_line--03{
+    animation-delay: 500ms;
+}
+.txt_line--04{
+    animation-delay: 1500ms;
+}
+.txt_line--05{
+    animation-delay: 2000ms;
+}
+.txt_line--06{
+    animation-delay: 2500ms;
+}
+.txt_line--07{
+    animation-delay: 3000ms;
+}
+.txt_line--08{
+    animation-delay: 3500ms;
+}
+.txt_line--09{
+    animation-delay: 4000ms;
+}
+
+
+
+
+
+
+@keyframes txt-lines {
+	to {
+          opacity: 1;
+        }
+}

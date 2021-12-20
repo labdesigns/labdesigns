@@ -1,0 +1,41 @@
+.front-page-expertise,
+.archive.category-expertise {
+  
+
+    article{
+        min-width: 300px;
+        margin-bottom: 50px;
+
+        &:nth-child(even){
+            margin-top: 35px;
+        }
+
+        .thumb-img{
+            width: 50%;
+            margin: auto;
+            border-radius: 50%;
+            transition: all 250ms ease-in-out;
+
+            &:hover {
+                background-color: rgba(28, 121, 121,.5);
+                transform: rotate(6deg);                
+            }
+        }
+
+        .exp-header{
+             .title-link h2{
+                width: 100%;
+                background-image: url("../assets/img/paint-green-straight.svg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                text-align: center;
+             }
+        }
+
+        a.read-more {
+            display: block;
+            margin-left: calc(15% + 20px);
+
+        }
+    }
+}

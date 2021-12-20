@@ -1,0 +1,49 @@
+h1.entry-title{
+    font-size: 3rem;
+}
+
+
+.single .content-base{
+    width: 75%;
+    margin: auto;
+
+    .entry-content_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+
+.category-expertise {
+    .entry-content{
+    width: 70%;
+    }
+}
+
+
+.expert-menu {
+    list-style: none;
+    font-family: lemon;
+    font-size: 20px;
+    
+    li{
+        margin: 0 0 10px 0;
+        text-align: center;
+        transition: 250ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    a{
+        text-decoration: none;
+     }
+
+     .current-menu-item a{
+         color: $l-black;
+     }
+    
+}
+

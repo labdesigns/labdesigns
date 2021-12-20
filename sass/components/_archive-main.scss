@@ -1,0 +1,11 @@
+.arch-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    article{
+        width: 30%;
+        min-width: 300px;
+        margin: 0 0 50px 0;
+    }
+}

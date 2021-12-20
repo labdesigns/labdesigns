@@ -1,0 +1,22 @@
+@font-face
+{
+    font-family:'lemon';
+    src:url('../assets/fonts/LemonMilk.woff');
+    font-display: swap;
+
+}
+
+
+$d-green: #1C7979;
+$l-green: #339999;
+$l-black: #424242;
+
+
+
+
+@mixin media($breakpoint) {
+
+    @media only screen and (max-width: $breakpoint){
+       @content
+    }
+}

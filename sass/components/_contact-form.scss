@@ -1,0 +1,164 @@
+.post-id-75,
+.post-id-267{
+    .site-main{
+        margin-bottom: 250px;
+    }
+}
+
+
+
+
+#wpcf7-f187-p75-o1 {
+    width: 50%;
+    min-width: 320px;
+
+    @media only screen and (max-width: 961px){
+        width: 100%;
+    }
+}
+
+.wpcf7-form{
+
+    width: 100%;
+
+    input,
+    textarea{
+        width: 100%;
+        border: 0;
+        border-radius: 16px;
+        background: #33999938;
+        padding: 1rem;
+
+        font-size: 1.1rem;
+
+
+        
+
+    }
+
+}
+
+.contact-img{
+    width: 50%;
+
+
+    @include media(961px){
+        width: 100%;
+    }
+}
+
+
+
+.footer-contact {
+    position: relative;
+    background: $d-green;
+    width: 80%;
+    height: 510px;
+    margin: auto;
+    padding: 20px 80px;
+    border-radius: 50px;
+
+    @include media(961px){
+        height: 810px;
+    }
+
+    @include media(600px){
+        width: 95%;
+        padding: 20px 20px;
+
+    }
+
+    h3{
+        color: white;
+        margin: 0 auto 26px auto;
+        font-size: 2rem;
+    }
+
+    .wpcf7-form{
+
+        width: 100%;
+    
+        input,
+        textarea{
+            width: 100%;
+            border: 0;
+            border-radius: 16px;
+            background: #dfe9e9e7;
+            padding: 1rem;
+            font-size: 1.1rem;
+        }
+    
+    }
+
+
+
+    input.wpcf7-form-control.wpcf7-submit {
+        background: white;
+        color: $d-green;
+        padding: .7rem 1rem;
+        grid-area: btn;
+
+    
+        &:hover{
+            background: $l-green;
+            color: white;
+        }
+    }
+
+    .ft-contact-txt{
+        grid-area: text;
+    }
+
+    .ft-contact-name{
+        grid-area: name;
+    }
+
+    .ft-contact-email{
+        grid-area: email;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-column-gap: 50px;
+        grid-template-areas: 
+        "text name"
+        "text email"
+        "text btn";
+
+        @include media(961px){
+            grid-column-gap:unset;
+            grid-row-gap:25px;
+            grid-template-areas: 
+            "name"
+            "email"
+            "text"
+            "btn";
+        }
+        
+    }
+
+    
+
+}
+
+
+
+input.wpcf7-form-control.wpcf7-submit {
+    border: 0;
+    border-radius: 16px;
+    margin: 20px 0 0 0 ;
+    background: $l-green;
+    padding: .7rem 1rem;
+    color: white;
+    font-family: lemon;
+    font-size: 1.1rem;
+    transition: all 350ms ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+        background: $d-green;
+    }
+}
+
+
+

@@ -1,0 +1,225 @@
+.content-cases-part{
+
+    .title-link{
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -45px;
+            display: block;
+            width:300px;
+            height:100%;
+            background-image: url('../assets/img/paint-green-straight.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            z-index: -1;
+            }
+    }
+
+    h2{
+        margin: 0 0 15px 0;
+    }
+    p{
+        margin: 0 0 10px 0;
+    }
+    .case-title{
+        color: #ffffff;
+        width: 60%;
+        padding: 5px 0 0 0;
+        min-width: 330px;
+
+        &::before {
+            content: '';
+            width: 100%;
+        }
+    }
+
+    .entry-content{
+        display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+        margin: auto;
+    }
+
+    .entry-content-wrapper{
+        width: 70%;
+    }
+
+    .case_content{
+        margin: 0 0 50px 0;
+        width: 100%;
+
+    }
+
+    .cases-prod_imgs {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        margin: 0 0 25px 0;
+        overflow: hidden;
+
+        // .prod_imgs-item-title{
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: rgba(57, 153, 153, .5);
+        //     font-family: lemon;
+        //     font-size: 1.3em;
+        //     color: #ffffff;
+        //     text-shadow: -1px -1px 0 $l-black, 1px -1px 0 $l-black, -1px 1px 0 $l-black, 1px 1px 0 $l-black;
+        //     opacity: 0;
+        //     transition: all 250ms ease-in-out;
+        //     cursor: pointer;
+        // }
+
+        .cases-prod_imgs-item{
+            position: relative;
+            flex-grow: 1;
+            flex-basis: 250px;
+            min-width: 250px;
+            cursor: pointer;
+
+            img.prod-img{
+                transition: 350ms ease-in-out;
+
+            }
+
+            &:hover img.prod-img{
+                transform: scale(1.1);
+
+            }
+  
+        }
+       
+    }
+
+   
+
+    .sidebar {
+
+         > div:not(:last-child){
+            margin-bottom: 25px;
+        }
+
+        .cases-github-link a,
+        .cases-ext-link a{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0 0 15px 0;
+        }
+        .gitlogo-main,
+        .ext-url-main{
+            
+            width:30px;
+
+            .gitlogo,
+            .ext-url {
+                fill: #ffffff;
+            }
+        }
+
+        .cases-tech_list-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            img{
+                width:50px;
+                height: 50px;
+            }
+
+            .cases-tech_list-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 70px;
+            }
+        }
+
+
+
+        .adjacent {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0 0 0;
+            border-top: white 1px solid;
+            margin: 20px 0 0 0;
+
+            &-link{
+                display: flex;
+                align-items: flex-end;
+                text-decoration: none;
+                transition: 250ms ease-in-out;
+
+                svg{
+                    margin: 0 5px;
+
+                    .st0{
+                        transition: 250ms ease-in-out;
+                    }
+                }
+
+
+                &:hover,
+                &:hover .st0{
+                    color: $l-black;
+                    fill: $l-black;
+                }
+            }
+        }
+    } 
+}
+
+//modal
+
+.prod-img_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    visibility: hidden;
+    opacity: 0;
+   
+    background-color: rgba(0,0,0,.5);
+    
+    cursor: url('../assets/img/times-solid.png'), crosshair;
+
+    .btn-next,
+    .btn-prev{
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        cursor: pointer;
+        display: none;
+    }
+
+    .prod-img_gall {
+        width: 60%;
+        height: auto;
+        cursor: default;
+    }
+}
+
+.show{
+    visibility: visible;
+    animation-name: showModal;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showModal{
+    from {opacity: 0;}
+    to{opacity: 1;}
+}

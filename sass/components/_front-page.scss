@@ -1,0 +1,97 @@
+.front-page-expertise {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+
+    .riedeltje{
+        margin: 0 0 50px 0;
+        line-height: 1.6;
+        font-size: 1.15rem;
+        width: 100%;
+
+        > p{
+            max-width: 75ch;
+            margin: auto;
+        }
+    }
+}
+
+.front-page-cases-bg-wrapper{
+    background-image: url('../assets/img/front-page-cases-bg.svg');
+    background-repeat: repeat-x;
+    padding-bottom: 150px;
+
+
+
+      .front-page-cases {
+        display: flex;
+        justify-content: space-evenly;
+
+
+        .glide__arrow {
+            position: absolute;
+            top: 50%;
+            z-index: 1;
+            width: 35px;
+            height: 35px;
+            margin-top: -9px;
+            border-radius: 50%;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+            background-color: #fff;
+            border: 0;
+
+            &:hover{
+                background-color: $d-green;
+
+            }
+        }
+
+        .glide__arrow--left{
+            left: -3rem;
+        }
+
+        .glide__arrow--right{
+            right: -3rem;
+        }
+
+        article.archive-cases-part{
+            margin: 0 5px;
+            width: 100%;
+        }
+    }
+
+    .more-cases{
+        width:275px;
+        margin: 50px auto 0 20%;
+        position: relative;
+
+        &:after{
+            content: url('../assets/img/more-cases-ul.svg');
+            position: absolute;
+            top: 40px;
+            left: -20px;
+            width: 250px;
+            
+        }
+
+        &:hover .more-cases-img{
+            margin-left: 15px;
+            transform: scale(1.2);
+        }
+        a{
+            font-family: lemon;
+            color: #424242;
+            text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+            font-size: 2em;
+            text-decoration: none;
+
+            .more-cases-img{
+                width: 50px;
+                height: 50px;
+                transition: all ease-in-out 250ms;
+            }
+        }
+    }
+}
